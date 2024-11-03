@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Stopwatch with History Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="theme-selector">
+        <label for="theme">Choose Theme:</label>
+        <select id="theme">
+            <option value="digital">Digital</option>
+            <option value="retro">Retro</option>
+            <option value="analog">Analog</option>
+        </select>
+    </div>
+
+    <div id="stopwatch-container">
+        <div id="timer">00:00:00</div>
+
+        <div id="buttons">
+            <button id="start">Start</button>
+            <button id="stop" disabled>Stop</button>
+            <button id="reset">Reset</button>
+            <button id="lap" disabled>Lap</button>
+            <button id="share" disabled>Share</button>
+        </div>
+
+        <div id="lap-times"></div>
+        
+        <div id="history-log">
+            <h3>History Log</h3>
+            <div id="history-entries"></div>
+            <button id="clear-history">Clear History</button>
+        </div>
+
+        <input type="text" id="share-link" readonly style="display: none;">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
